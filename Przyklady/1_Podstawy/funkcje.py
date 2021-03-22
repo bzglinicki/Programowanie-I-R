@@ -9,12 +9,12 @@
 # Definiowanie i wywoływanie funkcji
 # *************************************************************
 
-def f():
+def f():   # definicja funkcji
     msg = "Funkcja f()"
     print(msg)
 
 print("---> Główny program...")
-f()
+f()        # wywołanie funkcji
 print("---> Główny program...")
 print()
 
@@ -28,7 +28,7 @@ print("---> Główny program...")
 print()
 
 # *************************************************************
-# Przekazywanie argumentów
+# Argumenty funkcji
 # *************************************************************
 
 def printPersonalData(name, surname, age):
@@ -39,17 +39,18 @@ def printPersonalData(name, surname, age):
 
 print("Argumenty pozycyjne:\n")
 
-printPersonalData("Jan", "Nowak", 25)
-print()
+printPersonalData("Jan", "Nowak", 25)   # name = "Jan", surname = "Nowak",
+print()                                 # age = 25
 
-printPersonalData(25, "Jan", "Nowak")
-print()
+printPersonalData(25, "Jan", "Nowak")   # name = 25, surname = "Jan",
+print()                                 # age = "Nowak"
 
 # Błąd:
 #    printPersonalData("Jan", "Nowak")
 #    printPersonalData("Jan", "Nowak", 25, "jan.nowak@example.com")
 
 # Argumenty z kluczem *****************************************
+
 print("Argumenty z kluczem:\n")
 
 printPersonalData(name = "Jan", surname = "Nowak", age = 25)
@@ -63,7 +64,7 @@ print()
 #    printPersonalData(name = "Jan", surname = "Nowak")
 #    printPersonalData(name = "Jan", surname = "Nowak", age = 25, email = "jan.nowak@example.com")
 
-# Mieszanie obu typów argumentów *******************************
+# Mieszanie obu typów argumentów ******************************
 
 print("Argumenty mieszane:\n")
 
@@ -78,7 +79,7 @@ print()
 #    printPersonalData(name = "Jan", "Nowak", age = 25)
 #    printPersonalData("Jan", surname = "Nowak", 25)
 
-# Wartości domyślne ******************************************
+# Wartości domyślne argumentów ********************************
 
 def printPersonalDataDef(name = "Bartłomiej", surname = "Kowalski", age = 20):
     print(f"Imię i nazwisko: {name} {surname}")
@@ -101,8 +102,12 @@ print()
 printPersonalDataDef()
 print()
 
-# Argumenty są przekazywane "przez wartość"!
-print("Przekazywanie przez wartość:")
+# Argumenty są przekazywane "przez wartość" *******************
+
+# Oznacza to, że funkcja tworzy na swoje potrzeby lokalne kopie zmiennych
+# przekazanych jej jako argumenty, a nie operuje na pierwotnych zmiennych.
+
+print("Przekazywanie przez wartość:\n")
 
 def inc(x):
     x += 1   # x = x + 1
@@ -110,6 +115,7 @@ def inc(x):
 k = 5
 inc(k)
 print(k)
+print()
 
 # *************************************************************
 # Instrukcja return. Zwracanie wartości
@@ -118,16 +124,18 @@ print(k)
 def g():
     print("Funkcja g() po raz pierwszy.")
     return
-    print("Funkcja g() po raz drugi.")   # To się nie wykona!
+    # print("Funkcja g() po raz drugi.") - to się nie wykona!
+
+print("Instrukcja return:\n")
 
 print("---> Główny program...")
 g()
 print("---> Główny program...")
 print()
 
-# Instrukcję return można wykorzystać np. do reagowania na niepoprawne
-# wartości argumentów
-def h(x):
+# Instrukcję return można wykorzystać do reagowania na niepoprawne
+# wartości argumentów.
+def h(x):         # Funkcja oczekuje, że 0 <= x <= 100.
     if x < 0:     # Argument niepoprawny, nie rób nic.
         return
 
@@ -139,10 +147,55 @@ def h(x):
 h(-3)
 h(105)
 h(64)
+print()
 
-# Zwracanie wartości
+# Zwracanie wartości ******************************************
+
 def message():
     return "Pozdrawiam!"
 
 msg = message()
 print(msg)
+
+def mul5(x):
+    return 5 * x
+
+print(mul5(2))
+print(mul5(5))
+print(mul5(1.3))
+print()
+
+# Zwracanie wielu wartości ************************************
+
+def xy():
+    return 1, 2
+
+x, y = xy()
+print(f"x = {x}, y = {y}")
+
+w = xy()
+print(f"w = {w}\nTyp w: {type(w)}")
+print()
+
+# Instrukcja yield ********************************************
+
+def one_two_three():
+    yield 1
+    yield 2
+    yield 3
+
+print(one_two_three())
+
+gen = one_two_three()
+print(next(gen))
+print(next(gen))
+print(next(gen))
+# print(next(gen))   - błąd!
+
+print(tuple(one_two_three()))
+print(list(one_two_three()))
+print(set(one_two_three()))
+# print(dict(one_two_three()))   - błąd!
+
+for x in one_two_three():
+    print(x)

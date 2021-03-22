@@ -50,5 +50,5 @@ print(f"Wartość zwrócona przez funkcję: {result}.\nCzas wykonania funkcji: {
 print()
 
 print("fff *************************************")
-result, time = fspeed(fff, 70, 1.8)
+result, time = fspeed(fff, 70, 1.8, name="Tomek", age=20)
 print(f"Wartość zwrócona przez funkcję: {result}.\nCzas wykonania funkcji: {time} ns.")

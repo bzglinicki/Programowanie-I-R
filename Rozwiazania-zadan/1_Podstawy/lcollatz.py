@@ -7,12 +7,12 @@
 # Definiujemy słownik przechowujący długości nietrywialnej części ciągu dla różnych k.
 # Ma on milion elementów, wszystkie mają początkowo wartość 0.
 # d[k] będzie długością ciągu Collatza zaczynającego się od k.
-d = {n: 0 for n in range(1,1000000)}
+d = {n: 0 for n in range(1, 1000000)}
 d[1] = 1   # Zmieniamy wartość pierwszego elementu
 d[2] = 2   # na 1, zaś drugiego elementu - na 2. 
 
 # Pętla przebiega po możliwych wartościach pierwszego wyrazu ciągu.
-for n in range(3, 1000000, 1):
+for n in range(3, 1000000):
     k = n       # Pierwszy wraz ciągu.
     seqlen = 0  # Szukana długość nietrywialnej części ciągu zaczynającego się od k.
 

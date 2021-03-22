@@ -61,7 +61,7 @@ print("", "non", "omnis", "moriar", "", sep="|")
 
 # Funkcja print() pozwala określić ciąg znaków umieszczany na końcu wypisywanego łańcucha
 # Domyślnie jest to pojedynczy znak nowej linii
-print("non", "omnis", "moriar")             # nowa linia
+print("non", "omnis", "moriar")                 # nowa linia
 print("OK")
 
 print("non", "omnis", "moriar", end="\n")       # nowa linia
@@ -80,5 +80,5 @@ print("non", "omnis", "moriar", end=" ---> ")   # dowolny ciąg znaków
 print("OK")
 
 # "end" i "sep" można łączyć
-print("Mercurius", "Venus", "Terra", "Mars", sep=', ', end=', ')
-print("Iuppiter", "Saturnus", "Uranus", "Neptunus", sep=', ')
+print("Mercurius", "Venus", "Terra", "Mars", sep=", ", end=", ")
+print("Iuppiter", "Saturnus", "Uranus", "Neptunus", sep=", ")
