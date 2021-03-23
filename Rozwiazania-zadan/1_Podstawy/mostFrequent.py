@@ -23,8 +23,8 @@ def mostFrequent(lst):
 	return k
 
 # Główny program
-input_str = input("Podaj listę liczb całkowitych:\n")
-input_lst = input_str.split()
+input_str = input("Podaj listę liczb całkowitych, oddzielonych przecinkiem:\n")
+input_lst = input_str.split(",")
 
 # Konwersja elementów listy z łańcuchów tekstowych na liczby całkowite
 for i in range(len(input_lst)):

@@ -1,5 +1,5 @@
 # Biblioteka `matplotlib`
-Biblioteka do tworzenia wykresów dla języka Python.
+Biblioteka do wizualizacji dla języka Python.
 
 Instalacja (więcej informacji [tutaj](https://matplotlib.org/stable/users/installing.html)):<br/>
 `python -m pip install -U pip`<br/>
