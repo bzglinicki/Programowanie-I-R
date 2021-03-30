@@ -64,7 +64,7 @@ with PdfPages('multipage_pdf.pdf') as pdf:
     # Rysujemy trzeci wykres
     # plt.rc('text', usetex = False)
     fig = plt.figure(figsize = (4, 5))
-    x, y = x, y = plot_sin()
+    x, y = plot_sin()
     plt.plot(x, y, "go")
     plt.title("Wykres nr 3")
     pdf.savefig(fig)   # Możemy zdecydować, który z istniejących obiektów Figure jest

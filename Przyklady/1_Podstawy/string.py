@@ -100,3 +100,10 @@ f"""To jest {name.upper()}.
 f"{{70 + 4}}"
 f"{{{70 + 4}}}"
 f"{{{{70 + 4}}}}"
+
+# Pętla po łańcuchu
+msg = "Ala ma kota."
+
+for c in msg:
+    print(c)
+print()
