@@ -6,7 +6,7 @@ Poniżej wybór najpopularniejszych pakietów wykorzystywanych w obliczeniach na
 ## Podstawowe
 * [NumPy](NumPy.md) - podstawowy pakiet do obliczeń numerycznych,
 * [SciPy](SciPy.md) - zaawansowany pakiet do obliczeń naukowych,
-* [SimPy](SimPy.md) - pakiet do obliczeń symbolicznych,
+* [SymPy](SymPy.md) - pakiet do obliczeń symbolicznych,
 * [Matplotlib](./Matplotlib) - wizualizacja danych.
 
 ## Matematyka i analiza statystyczna

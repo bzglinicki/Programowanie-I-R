@@ -23,6 +23,10 @@ Przewodniki (wybrane):
 * [NumPy Tutorial - W3Schools](https://www.w3schools.com/python/numpy/default.asp),
 * [NumPy Tutorial: Your First Steps Into Data Science in Python](https://realpython.com/numpy-tutorial/).
 
+## Zadania
+* [w3resource](https://www.w3resource.com/python-exercises/numpy/index.php),
+* [ML+](https://www.machinelearningplus.com/python/101-numpy-exercises-python/).
+
 ## Cytowanie
 Gdy pakiet NumPy wykorzystywany jest w projekcie prowadzącym do publikacji naukowej, warto w niej zacytować następującą pracę:
 > C.R. Harris, K.J. Millman, S.J. van der Walt et al., "Array programming with NumPy", Nature 585, 357–362 (2020). DOI: 0.1038/s41586-020-2649-2
