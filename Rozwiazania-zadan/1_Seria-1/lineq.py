@@ -5,10 +5,10 @@
 # (znaków '\t') w łańcuchu "NAPIS" na n
 
 print("ax + b = 0")
-a = float(input("\ta = ".expandtabs(3)))
-b = float(input("\tb = ".expandtabs(3)))
+a = float(input("   a = "))
+b = float(input("   b = "))
 print()
 
 x = -b / a
 
-print("Rozwiązanie:\n\tx =".expandtabs(3), x)
+print("Rozwiązanie:\n   x =", x)

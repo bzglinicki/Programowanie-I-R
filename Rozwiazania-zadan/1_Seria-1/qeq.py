@@ -8,21 +8,21 @@ import math
 import cmath
 
 print("ax^2 + bx + c = 0")
-a = float(input("\ta = ".expandtabs(3)))
-b = float(input("\tb = ".expandtabs(3)))
-c = float(input("\tc = ".expandtabs(3)))
+a = float(input("   a = "))
+b = float(input("   b = "))
+c = float(input("   c = "))
 print()
 
 delta = (b**2) - (4*a*c)
 
 if delta == 0:
     x0 = -b / (2*a)
-    print("Rozwiązanie:\n\tx0 = {:.2f}".format(x0).expandtabs(3))
+    print("Rozwiązanie:\n   x0 = {:.2f}".format(x0))
 elif delta > 0:
     x1 = (-b - math.sqrt(delta)) / (2*a)
     x2 = (-b + math.sqrt(delta)) / (2*a)
-    print("Rozwiązania:\n\tx1 = {0:.2f}\n\tx2 = {1:.2f}".format(x1, x2).expandtabs(3))
+    print("Rozwiązania:\n   x1 = {0:.2f}\n   x2 = {1:.2f}".format(x1, x2))
 else:
     x1 = (-b - cmath.sqrt(delta)) / (2*a)
     x2 = (-b + cmath.sqrt(delta)) / (2*a)
-    print(f"Rozwiązania:\n\tx1 = {x1:.2f}\n\tx2 = {x2:.2f}".expandtabs(3))
+    print(f"Rozwiązania:\n   x1 = {x1:.2f}\n\tx2 = {x2:.2f}")

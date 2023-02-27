@@ -43,8 +43,8 @@ result_i = ifactorial(n)
 i_stop = time.perf_counter_ns()
 
 print(f"Silnia liczby {n} - algorytm iteracyjny:")
-print(f"\tWynik: {result_i}.".expandtabs(3))
-print(f"\tCzas wykonania: {i_stop - i_start} ns.".expandtabs(3))
+print(f"   Wynik: {result_i}.")
+print(f"   Czas wykonania: {i_stop - i_start} ns.")
 
 # Obliczenie silni - algorytm rekurencyjny
 r_start = time.perf_counter_ns()
@@ -52,5 +52,5 @@ result_r = rfactorial(n)
 r_stop = time.perf_counter_ns()
 
 print(f"Silnia liczby {n} - algorytm rekurencyjny:")
-print(f"\tWynik: {result_r}.".expandtabs(3))
-print(f"\tCzas wykonania: {r_stop - r_start} ns.".expandtabs(3))
+print(f"   Wynik: {result_r}.")
+print(f"   Czas wykonania: {r_stop - r_start} ns.")
