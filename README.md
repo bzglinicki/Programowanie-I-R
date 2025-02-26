@@ -1,2 +1,5 @@
-# Programowanie-I-R
-Source code and supplementary materials for the Python programming course I teach at the Faculty of Physics at the University of Warsaw (in Polish).
+# Programowanie i metody numeryczne
+
+> [!NOTE]
+> Strona przedmiotu:\
+> [https://www.fuw.edu.pl/~bzglinicki/teaching/p1r/](https://www.fuw.edu.pl/~bzglinicki/teaching/p1r/)
