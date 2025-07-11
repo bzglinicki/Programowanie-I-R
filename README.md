@@ -1,4 +1,4 @@
-# Programowanie i metody numeryczne
+## Programowanie i metody numeryczne
 
 > [!NOTE]
 > Strona przedmiotu:\
